@@ -14,7 +14,7 @@ function DisplayCard() {
   return (
     <div className="flex flex-wrap justify-around">
       {beers.map((beer) => {
-        return <BeerCard key={beer.id} name={beer.name} description={beer.description} abv={beer.abv} ibu={beer.ibu} />;
+        return <BeerCard key={beer.id} name={beer.name} description={beer.description} abv={beer.abv} ibu={beer.ibu} id={beer.id} />;
       })}
     </div>
   );
